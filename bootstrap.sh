@@ -1,8 +1,13 @@
+
 #!/bin/sh
 
-# Install GIT, build-essential
 yum update
+
+# Install GIT, build-essential & curl
 yum -y install git curl
+
+yum -y install epel-release
+yum -y install nodejs npm
 
 # Install RVM, Ruby and Rails
 su - vagrant -c "gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3"
