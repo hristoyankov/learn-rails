@@ -15,3 +15,8 @@ su - vagrant -c "curl -sSL https://get.rvm.io | bash -s stable"
 su - vagrant -c "rvm install ruby-2.2.0"
 su - vagrant -c "rvm use ruby-2.2.0@learn-rails --create --ruby-version --default"
 su - vagrant -c "gem install rails -v 4.2.0"
+
+# Install heroku toolbelt
+wget -qO- https://toolbelt.heroku.com/install.sh | sh
+echo 'PATH="/usr/local/heroku/bin:$PATH"' >> /home/vagrant/.profile
+
