@@ -18,5 +18,5 @@ su - vagrant -c "gem install rails -v 4.2.0"
 
 # Install heroku toolbelt
 wget -qO- https://toolbelt.heroku.com/install.sh | sh
-echo 'PATH="/usr/local/heroku/bin:$PATH"' >> /home/vagrant/.profile
+echo 'PATH="/usr/local/heroku/bin:$PATH"' >> /home/vagrant/.bashrc
 
